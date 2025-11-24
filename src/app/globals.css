@@ -43,14 +43,9 @@ body {
 }
 
 .dot {
-  font-size: 70px;
+  font-size: clamp(2rem, 6vw, 4.5rem);
   color: #0aff9d;
   border-radius: 50%;
-}
-
-.title-style {
-  font-size: 3rem;
-  font-weight: 900;
 }
 
 .horizontal-line {
@@ -58,5 +53,19 @@ body {
   height: 2px;
   background-color: "red";
   opacity: 1;
+}
+
+.title-grid-left,
+.title-grid-right {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .title-grid-left {
+    width: var(--left);
+  }
+  .title-grid-right {
+    width: var(--right);
+  }
 }
 

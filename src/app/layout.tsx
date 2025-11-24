@@ -50,7 +50,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="flex text-white">
-        <div className="bg-black w-12 h-screen sticky top-0 md:display-none">
+        <div className="bg-black w-12 h-screen sticky top-0 hidden md:block">
         </div>
         <div className="w-full bg-[#232323]">
           <div className="w-full h-12 flex justify-between items-center p-2 sticky z-50 top-0 bg-[#1a1818]/80">

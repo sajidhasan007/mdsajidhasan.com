@@ -4,7 +4,7 @@ import { AddAnimation } from "./AddAnimation";
 
 const ContactUs = () => {
   return (
-    <div className="flex justify-center mt-40" id="contact">
+    <div className="flex justify-center mt-8 lg:mt-40" id="contact">
       <div className="text-center">
         <AddAnimation>
           <h1 className="text-[70px] font-black text-center">
@@ -42,11 +42,11 @@ const ContactUs = () => {
             <HiOutlineMail aria-hidden="true" />
 
             <a
-              href="mailto:sajid.hasan.cit@gmail.com"
+              href="mailto:sajid.hasan.cse43@gmail.com"
               className="font-bold text-xl text-primary hover:underline"
               aria-label="Send email to Sajid Hasan"
             >
-              sajid.hasan.cit@gmail.com
+              sajid.hasan.cse43@gmail.com
             </a>
           </div>
         </AddAnimation>

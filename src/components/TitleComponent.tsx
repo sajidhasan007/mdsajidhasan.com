@@ -21,19 +21,19 @@ const TitleComponent: FC<ITitleOrder> = ({
   return (
     <AddAnimation>
       <div
-        className={`flex items-center w-full ${isReverse ? "flex-row-reverse" : ""}`}
+        className={`mt-8 lg:mt-40 mb-4 lg:mb-8 flex flex-col sm:flex-row items-center w-full ${isReverse ? "sm:flex-row-reverse" : ""}`}
+        style={(({ ['--left']: leftPercent, ['--right']: rightPercent } as unknown) as React.CSSProperties)}
       >
         <div
-          style={{ width: leftPercent }}
-          className={`${isReverse ? "text-right" : "mr-4"}`}
+          className={`${isReverse ? "text-right" : "mr-0 sm:mr-4"} title-grid-left w-full`}
         >
-          <div className="title-style">
+          <div className="text-4xl sm:text-5xl lg:text-6xl font-extrabold">
             {title}
             <span className="dot">.</span>
           </div>
         </div>
 
-        <div style={{ width: rightPercent }} className="flex justify-center items-center">
+        <div className="title-grid-right w-full flex justify-center items-center">
           <div className="bg-white h-px w-full mt-4" />
         </div>
       </div>

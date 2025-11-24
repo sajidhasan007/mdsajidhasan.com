@@ -17,7 +17,7 @@ const About = () => {
             <div className="text-base">
               <AddAnimation>
                 <p className="mb-4">
-                  Hey! Im Sajid, As a passionate front-end developer at Misfit,
+                  Hey! Im Sajid, As a passionate front-end developer at Exabyting,
                   I am dedicated to crafting exceptional user experiences
                   through interactive UI designs. With a strong foundation in
                   front-end development, I have been honing my skills in
