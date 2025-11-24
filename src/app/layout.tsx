@@ -1,9 +1,28 @@
-/** biome-ignore-all lint/suspicious/noExplicitAny: <explanation> */
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import "./globals.css";
+
+export interface SocialLink {
+  icon: React.ReactNode;
+  link: string;
+}
+
+export const mySocialLinks: SocialLink[] = [
+  {
+    icon: <FaGithub />,
+    link: "https://github.com/sajidhasan007",
+  },
+  {
+    icon: <FaLinkedin />,
+    link: "https://www.linkedin.com/in/sajid007/",
+  },
+  {
+    icon: <FaFacebook />,
+    link: "https://www.facebook.com/sajidhasan1997/",
+  },
+];
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,7 +55,7 @@ export default function RootLayout({
         <div className="w-full bg-[#232323] ">
           <div className="w-full h-12 flex justify-between items-center p-2 sticky z-50 top-0 bg-[#1a1818]/80">
             <div className="flex gap-2">
-              {mySocialLinks.map((item: any) => (
+              {mySocialLinks.map((item: SocialLink) => (
                 <Link
                   key={item.link}
                   href={item.link}
@@ -63,17 +82,4 @@ export default function RootLayout({
   );
 }
 
-export const mySocialLinks = [
-  {
-    icon: <FaGithub />,
-    link: "https://github.com/sajidhasan007",
-  },
-  {
-    icon: <FaLinkedin />,
-    link: "https://www.linkedin.com/in/sajid007/",
-  },
-  {
-    icon: <FaFacebook />,
-    link: "https://www.facebook.com/sajidhasan1997/",
-  },
-];
+

@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { type JSX, useEffect, useRef } from "react";
@@ -9,19 +8,18 @@ interface Props {
   slider?: boolean;
 }
 
-export const AddAnimation = ({ children, width = "100%" }: Props) => {
+export const AddAnimation = ({ children }: Props) => {
   const ref = useRef(null);
   const isInview = useInView(ref, { once: true });
   const mainContruls = useAnimation();
   const sliderContruls = useAnimation();
 
-  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
     if (isInview) {
       mainContruls.start("visible");
       sliderContruls.start("visible");
     }
-  }, [isInview]);
+  }, [isInview, mainContruls, sliderContruls]);
 
   return (
     <div ref={ref} style={{ position: "relative", overflow: "hidden" }}>

@@ -1,4 +1,3 @@
-/** biome-ignore-all lint/correctness/useExhaustiveDependencies: <explanation> */
 "use client";
 
 import { motion, useAnimation, useInView } from "framer-motion";
@@ -18,7 +17,7 @@ const HeaderSection = () => {
       mainContruls.start("visible");
       sliderContruls.start("visible");
     }
-  }, [isInview]);
+  }, [isInview, mainContruls, sliderContruls]);
 
   return (
     <div className="h-full flex flex-col lg:flex-row" ref={ref}>
