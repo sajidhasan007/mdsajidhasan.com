@@ -39,8 +39,7 @@ const HeaderSection = () => {
 
             <AddAnimation>
               <p className="text-base mb-2">
-                I have spent the last 2 years building and scaling software for
-                some pretty cool clients. Lets connect!
+                Frontend developer passionate about clean UI, strong UX, and scalable code. Lets connect!
               </p>
             </AddAnimation>
             <AddAnimation>
