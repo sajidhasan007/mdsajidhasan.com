@@ -81,15 +81,11 @@ export const metadata: Metadata = {
     description: "Explore my portfolio and projects in the React ecosystem.",
     images: ["/sajid_hasan.jpg"],
   },
-
   icons: {
-    icon: [
-      { url: "/assets/sajid_hasan.jpg", sizes: "32x32", type: "image/png" },
-      { url: "/assets/sajid_hasan.jpg", sizes: "16x16", type: "image/png" },
-    ],
-    shortcut: "/assets/sajid_hasan.jpg",
-    apple: "/assets/sajid_hasan.jpg",
-  },
+    icon: "/sajid_hasan.jpg",
+    apple: "/sajid_hasan.jpg",
+    shortcut: "/sajid_hasan.jpg"
+  }
 };
 
 export default function RootLayout({
