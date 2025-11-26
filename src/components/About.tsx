@@ -18,44 +18,12 @@ const About = () => {
               <AddAnimation>
                 <p className="mb-4">
                   Hey! Im Sajid, As a passionate front-end developer at Exabyting,
-                  I am dedicated to crafting exceptional user experiences
-                  through interactive UI designs. With a strong foundation in
-                  front-end development, I have been honing my skills in
-                  technologies such as React, and NextJs to create visually
-                  appealing and intuitive web applications.
+                  I help businesses create beautiful, fast, and user-friendly websites and web apps. From the UI design to the final development, I focus on making your product look great and work smoothly on every device. If you want a clean design, good performance, and a hassle-free experience, I'm here to help.
                 </p>
               </AddAnimation>
               <AddAnimation>
                 <p className="mb-4">
-                  Currently, I am expanding my knowledge by diving into Node.js
-                  and working towards becoming a full-stack developer. By
-                  learning Node.js, I aim to strengthen my understanding of
-                  server-side development, API integration, and database
-                  management, allowing me to contribute to end-to-end web
-                  development projects.
-                </p>
-              </AddAnimation>
-              <AddAnimation>
-                <p className="mb-4">
-                  Driven by a genuine love for programming, I find joy in
-                  writing clean and maintainable code that enhances the
-                  functionality and optimizes performance. I am always eager to
-                  learn new technologies and frameworks to stay up to date with
-                  industry trends and deliver modern solutions.
-                </p>
-              </AddAnimation>
-
-              <AddAnimation>
-                <p className="mb-4">
-                  Collaboration is at the heart of my work. By effectively
-                  communicating and collaborating with cross-functional teams, I
-                  ensure seamless integration between front-end and back-end
-                  components, creating cohesive and efficient applications. I
-                  value continuous learning and actively seek opportunities to
-                  enhance my skill set. As I progress on my journey to becoming
-                  a full-stack developer, I am enthusiastic about taking on new
-                  challenges, exploring different technologies, and delivering
-                  impactful experiences.
+                  Currently, I am working for bKash, the number one brand in Bangladesh, where I build and refine UI for bKash.com, the official website of bKash.
                 </p>
               </AddAnimation>
               <AddAnimation>
