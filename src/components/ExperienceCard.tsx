@@ -42,18 +42,19 @@ const ExperienceCard: FC<IExperienceCard> = ({
         <div className="text-base ">{description}</div>
       </AddAnimation>
       <div>
-        <AddAnimation>
           <div className="flex gap-2 flex-wrap my-4">
             {techStack.map((item: string) => (
-              <div
-                key={item}
-                className="bg-[#383838] rounded-xl w-auto px-2 py-1 text-base "
-              >
-                {item}
-              </div>
+              <AddAnimation key={item}>
+                 <div
+                    key={item}
+                    className="bg-[#383838] rounded-xl w-auto px-2 py-1 text-base "
+                  >
+                    {item}
+                  </div>
+              </AddAnimation>
+                
             ))}
           </div>
-        </AddAnimation>
       </div>
     </div>
   );

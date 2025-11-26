@@ -67,18 +67,19 @@ const About = () => {
                     <h3 className="font-bold ">Use at work</h3>
                   </div>
                 </AddAnimation>
-                <AddAnimation>
                   <div className="flex gap-2 flex-wrap">
                     {workSkill.map((item: string) => (
-                      <div
+                      <AddAnimation  key={item}> 
+                       <div
                         key={item}
                         className="bg-[#383838] rounded-xl w-auto px-2 py-1 text-base "
                       >
                         {item}
                       </div>
+                      </AddAnimation>
+                     
                     ))}
                   </div>
-                </AddAnimation>
               </div>
 
               <div>
@@ -90,18 +91,18 @@ const About = () => {
                     <h3 className="font-bold ">Use for Fun</h3>
                   </div>
                 </AddAnimation>
-                <AddAnimation>
                   <div className="flex gap-2 flex-wrap">
                     {useForFun.map((item: string) => (
-                      <div
-                        key={item}
+                       <AddAnimation  key={item}> 
+                        <div
                         className="bg-[#383838] rounded-xl w-auto px-2 py-1 text-base "
                       >
                         {item}
                       </div>
+                      </AddAnimation>
+                     
                     ))}
                   </div>
-                </AddAnimation>
               </div>
             </div>
           </div>
