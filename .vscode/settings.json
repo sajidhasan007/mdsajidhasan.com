@@ -6,5 +6,8 @@
     "Inview",
     "Kash",
     "Sajid"
-  ]
+  ],
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": false
+}
 }
